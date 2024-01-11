@@ -1,0 +1,37 @@
+<!--MARGIN
+Sets the space around elements separating them from others
+customizable for top right bottom and left sides
+allows quick st up: margin:10px 20px (clockwise)
+can be used for central alignment with auto value.
+in margin background color wont be applied-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Margin</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+
+        #first {
+            height:50px; width: 50px;
+            margin: 5px 5px 25px 5px;
+            padding:10px;
+            background-color: chartreuse;
+        }
+    
+        #second {
+            height:50px; width: 50px;
+            margin: 5px 5px 5px 5px;
+            padding:10px;
+            background-color:aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="first" >Padded</div>
+    <div id="second" >Padding</div>
+
+</body>
+</html>

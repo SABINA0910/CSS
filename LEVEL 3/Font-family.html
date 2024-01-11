@@ -1,0 +1,34 @@
+<!--FONT FAMILY
+defines which font should be used for text within an element
+common choices include arial,segoe ui,times new roman and others
+incorporate a fallback font family in case the primary font is unavailable;helps in maintaining the site aesthetic
+employ web safe fonts to ensure consistency across different browsers and operating system
+always end the font family list with a generic family like serif or sans-serif as a last resort option-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Font-family</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+    <style>
+
+
+        #first {font-family: 'Dancing Script', cursive;}
+        #second {font-family:'Dancing Script', cursive;}
+        #third {font-family:'Oswald', sans-serif;}
+
+    </style>
+</head>
+<body>
+
+    <p id="first">Lorem ipsum dolor sit amet.</p><br>
+    <p id="second">Lorem ipsum dolor sit amet consectetur adipisicing </p><br>
+    <p id="third">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+
+</body>
+
+</html>

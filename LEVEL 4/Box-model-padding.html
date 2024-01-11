@@ -1,0 +1,41 @@
+<!-- BOX MODEL
+box model is central concept in css that outlines the design and layout of elements on the web page
+Consists of four main components-margin,border,padding and content
+Margin= the space outside the border,separating the element from others
+Border= the outline that encapsulates the padding and content
+Padding= the space between the border and the actual content providing a buffer
+Content=the innermost layer where text , images or other media are housed-->
+
+
+<!--PADDING PROPERTY
+defines the space between the content of an element and its border 
+individual sides=allows setting padding for individual sides using padding-top, padding-bottom, padding-left-->
+
+
+
+<!-- padding pattern = 5px for top , 10px for right, 15px for bottom, 20px for left so it goes (TOP-RIGHT-BOTTOM-LEFT)
+you can give single single value for padding=10px then all over it will be 10-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Padding</title>
+
+    <style>
+
+    *{margin: 0; padding: 0; }
+
+    #padded {
+        height: 50px; width: 50px;
+        padding: 5px 15px 25px 35px; 
+        background-color: yellow;   
+        
+    }
+
+    </style>
+</head>
+<body>
+    <div id="padded">Padding</div>
+</body>
+</html>

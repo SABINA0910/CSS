@@ -1,0 +1,29 @@
+<!--DESCENDANT SELECTOR
+nested targeting : styles elements nested within a specified element
+syntax: separate selectors with spaces
+hierarchy based: allows styling based on the hierarchical structure of -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>selector</title>
+    <style>
+        #first p {
+            color:blue;
+        }
+        /* p {
+            color:brown;
+        }  so here we have to define p again to select the color as in above only the id=first  color is defined */
+    </style>
+</head>
+<body>
+    <div id="first">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta sit quod iure blanditiis consectetur rerum minus voluptas non! Laborum, quae!</p>
+    </div>
+
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reiciendis corporis sed quis culpa voluptates minima a inventore cupiditate voluptatum reprehenderit eum distinctio aperiam beatae aliquam fugit minus, placeat eaque ex dicta! At eos in ex pariatur enim laborum nam nulla minima, fugiat repellat, quis corporis nostrum ipsa? Eum, asperiores.
+    </p>
+</body>
+</html>
