@@ -1,0 +1,36 @@
+<!--PSEUDO CLASSES
+Used to define states of HTML elements 
+syntax: selector:pseudo-class{styles}
+example= ?:hover, :active, :first-child
+Targets elements based on their position or user action-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pseudo Classes</title>
+    <style>
+        .one {
+            height: 25px;
+            width: 100px;
+            background-color: pink;
+            border: 2px solid darkblue;
+            border-radius: 5px;
+
+        }
+        .one:hover {
+            height: 30px; width: 120px;
+            background-color: yellow;
+        }
+        
+        .one:active {
+            height: 30px; width: 120px;
+            background-color: red;
+        }
+
+
+    </style>
+</head>
+<body>
+    <button class="one">Pseudo</button>
+</body>
+</html>

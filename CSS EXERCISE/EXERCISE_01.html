@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 1</title>
+    <link rel="stylesheet" href="EXERCISE_01.CSS">
+    <style>
+        #heading {
+            color:gold;
+        }
+
+
+        #div_09 {
+            color:blueviolet;
+        } 
+        p {
+            color:coral;
+        }
+        .special_heading {
+            color:darkorange;
+        }
+
+        #first, #second {
+            color:blue;
+        }
+    </style>
+
+
+</head>
+<body>
+<!-- creating a heading with a color -->
+
+    <h1 style="color:red;">This is my heading</h1><hr>
+
+<!--creating a div with id #heading, including css using inline,style tag and external and observe priority-->   
+
+    <div id="heading">This is external styling</div><hr>
+
+    <div id="heading" style="color:green;">This is inline styling</div><hr>
+
+<!-- creating a div , paragraph and heading ans using the is selector, element selector and class selector-->
+
+    <div id="div_09">Div</div>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae esse voluptate accusamus, repellat doloribus beatae provident cum dolores aliquam similique.</p>
+
+    <h2 class="special_heading">This is heading two</h2><hr>
+
+
+<!-- creating two div with id first and second ans define color for both using group selector-->   
+
+    <div id="first">FIRST DIV</div>
+    <div id="second">SECOND DIV</div><hr>
+
++-
+
+
+
+</body>
+</html>
+
+<!-- first priority = inline styling
+    -second priority = style tag
+    -last priority = external styling--> 

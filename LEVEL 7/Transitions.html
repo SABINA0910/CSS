@@ -1,0 +1,44 @@
+<!--TRANSITIONS
+CSS transition is a property that enables smooth animation between changes in CSS property values
+* transition-property = defines which CSS properties will transition
+* transition-duration = sets how long the transition lasts
+* transition-timing-function = controls the speed curve of the transition
+* transition- delay = specifies a delay before the transition starts-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>TRANSITIONS</title>
+    <style>
+        .one {
+            height: 25px;
+            width: 100px;
+            background-color: purple;
+            border: 2px solid black;
+            border-radius: 3px;
+
+            transition-property: all ;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 1s;
+
+            /* you can write in single line also the transition syntax     ex = transition: all 1s ease-in-out 1s; */
+        }
+        .one:hover {
+            height: 30px;
+            width: 150px;
+            background-color: orange;
+        }
+        .one:active {
+            height: 30px;  width: 150px;
+            background-color: blue;
+        }
+
+    </style>
+
+</head>
+<body>
+    <button class="one">Transition</button>
+</body>
+</html>

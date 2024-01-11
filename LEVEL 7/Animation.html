@@ -1,0 +1,47 @@
+<!--ANIMATION
+* animation-name: specifies the name of the @keyframes defined animation
+* animation-duration: defines the total time the animation takes to complete one cycle
+* animation-timing-function: controls the pacing of the animation(e.g,linear,ease-in)
+* animation-delay: sets a delay before the animation starts, allowing for a pause before initiation
+* animation-iteration-count: indicates the number of the times the animation should repeat
+* animation-direction: specifies the direction of the animation, allowing for reverse or alternate cycles-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ANIMATION</title>
+    <style>
+        .box {
+            height:100px; width: 100px;
+            border: 2px solid black;
+            background-color:yellow;
+            border-radius: 15px;
+            text-align: center;
+            position:relative;
+            top:10px;
+            left:10px;
+            animation-name: sliding;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 3s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            
+        /* animation: sliding 4s ease-in-out 0s 4 alternate; */
+        }
+
+        @keyframes sliding {
+            from {left:10px;}
+            to{left:400px;}
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>

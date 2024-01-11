@@ -1,0 +1,43 @@
+<!-- Rem : facilitates dynamic sizing relative to root element
+ensures responsiveness across various screens
+quickly set width and height as a percentage-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Percentage</title>
+    <style>
+
+        body{ font-size: 100px;}
+
+        #first{
+            height: 200px; width: 200px;
+            background-color:darkorchid;
+            font-size: 25px;
+        }
+
+        #second {
+            background-color: blue;
+            width: 70%;
+            height: 50%;
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    BODY
+    <div id="first">
+        First
+        <div id="second">
+            Second
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 2rem: means 2 * root/body  px  i:e = 2*100 px = 200px
+rem is related to root so it is related to the body 
+so the text size of the body will change accordingly-->

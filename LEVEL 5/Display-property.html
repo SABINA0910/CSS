@@ -1,0 +1,35 @@
+<!--DISPLAY PROPERTY
+BLOCK ELEMENTS-start on a new line and take up all horizontal space and can have margin and padding ,width and height can be set(div,p,h1,ul,li)
+INLINE-ELEMENTS- stay in line width,just as width as the content,no new line between the elements and limited styling (span,a)-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Display property</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        .box{
+            background-color: chartreuse;
+            height: 100px; width: 100px;
+            margin:5px;
+            display: inline-block;
+
+        }
+        #box1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Box 1</div>
+    <div id="box2" class="box">Box 2</div>
+    <div id="box3" class="box">Box 3</div>
+</body>
+</html>
+<!--when you use display block then you can set height and width 
+but when you use display:inline then the box will be gone and it will in same line with small area and you cannot set its height and width-->
+
+<!-- Display : Inline-block means the display will be in same line but the features will be of block means it will be a line of box with set height and width-->
+
+<!--Display: None; so here the box one will be gone with the space as well and box2 will appear in box 1 and continue
+but when we did visibility hidden the box was hidden but space was still there but in display none case the box and the space both will be gone. -->

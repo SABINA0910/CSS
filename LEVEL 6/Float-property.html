@@ -1,0 +1,42 @@
+<!--FLOAT PROPERTY
+Allows elements to be aligned to the left or right within their containing element 
+Can take values like 'left', 'right', 'none' to determine the floating direction
+Less commonly used with the advent of flexbox-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Float-Property</title>
+    <style>
+        .container {
+            
+            background-color: papayawhip;
+            height:110px;
+            width: 300px;
+            border: 3px solid black;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+            border:1px solid blue;
+        }
+        #box1 {
+            background-color: red;
+            float: right;
+            text-align: center;
+        }
+        #box2 {
+            background-color: chartreuse;
+            float:left;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">BOX 1</div>
+        <div id="box2" class="box">BOX 2</div>
+    </div>
+</body>
+</html>

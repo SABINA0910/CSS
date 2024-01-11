@@ -1,0 +1,86 @@
+
+<!--WRAP REVERSE
+
+* wrap-reverse : first it will come 12345 but 6789 did not fit it will go the top not bottom as in wrap SO here the item that does not fit in the container will go up serially--> 
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>FLEX-BOX-WRAP-REVERSE</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 3px solid black;
+            margin:5px;
+        }
+        #heading {margin-left: 350px; color:maroon;}
+
+        #container {
+            background-color:lavender;
+            height : 500px;
+            width: 900px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+
+            display:flex;
+            
+            flex-wrap: wrap-reverse;
+
+            
+            
+        }
+
+        #box1 { background-color:blue;}
+        #box2 { background-color:chartreuse}
+        #box3 { background-color:purple}
+        #box4 { background-color:crimson;}
+        #box5 { background-color:darkgreen;}
+        #box6 { background-color:cornflowerblue;}
+        #box7 { background-color:darkslategray;}
+        #box8 { background-color:lightpink;}
+        #box9 { background-color:gold;}
+
+        
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading">Flex Container</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box5" class="box">Item 5</div> 
+        <div id="box6" class="box">Item 6</div> 
+        <div id="box7" class="box">Item 7</div> 
+        <div id="box8" class="box">Item 8</div> 
+        <div id="box9" class="box">Item 9</div> 
+        
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

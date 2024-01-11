@@ -1,0 +1,45 @@
+<!-- em : size relative to parent elements font size
+facilitates easy scaling of elements for responsive design
+commonly used for setting font sizes adaptively-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Percentage</title>
+    <style>
+
+        body{ font-size: 100px;}
+
+        #first{
+            height: 200px; width: 200px;
+            background-color:darkorchid;
+            font-size: 25px;
+        }
+
+        #second {
+            background-color: blue;
+            width: 70%;
+            height: 50%;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    BODY
+    <div id="first">
+        First
+        <div id="second">
+            Second
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- 2em : twice of my parent i:e = 25px * 2 = 50px
+here the size of the text (second) will increase
+
+1em= same as parent size
+0.5em= half of the parent size
+3em = thrice the size of the parent-->

@@ -1,0 +1,46 @@
+<!--RELATIVE UNITS for responsive website
+
+px = absolute pixel value
+
+% = a percentage of the parent element. 100% is the width of parent element
+
+em = relative to the font size of the element
+
+rem = relative to the font size of root of the element
+
+vh = relative to 1% of the view code height
+
+vw = relative to 1% of the view code width-->
+
+<!-- % : facilitates dynamic sizing relative to parents
+ensures responsiveness across various screens
+quickly set width and height as a percentage-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Percentage</title>
+    <style>
+        #first{
+            height: 200px; width: 200px;
+            background-color: chartreuse;
+            font-size: 25px;
+        }
+
+        #second {
+            background-color: blue;
+            width: 50%;
+            height: 30%;
+        }
+    </style>
+</head>
+<body>
+    <div id="first">
+        FIRST
+        <div id="second">
+            SECOND
+        </div>
+    </div>
+</body>
+</html>

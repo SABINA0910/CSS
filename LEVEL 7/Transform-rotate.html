@@ -1,0 +1,71 @@
+<!--CSS TRANSFORM
+allows modification of an elements shape and position
+can perform operations like rotate,scale,and translate
+does not affect the layout of surrounding elements
+-->
+
+<!-- ROTATE 
+* rotates an element around a fixed point
+* defined using the rotate() function within the transform property
+* default rotation point is the elements center-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ROTATE</title>
+    <style>
+        .box1 {
+            height: 50px; width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: chartreuse;
+            position: relative;
+            top: 50px;
+            left: 50px;
+
+            transition: all 1s ease-in-out 0s;
+        }
+        .box1:hover {
+            transform: rotateX(45deg);
+        }
+        .box2 {
+            height: 50px; width:50px;
+            background-color: darkorchid;
+            border: 2px solid black;
+            border-radius: 3px;
+            position:relative;
+            top: 80px;
+            left: 80px;
+
+            transition: all 1s ease-in-out 0s;
+        }
+
+        .box2:hover {
+            transform: rotateY(180deg);
+        }
+
+
+        .box3 {
+            height: 50px; width:50px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 3px;
+            position:relative;
+            top: 100px;
+            left: 100px;
+
+            transition: all 1s ease-in-out 0s;
+        }
+
+        .box3:hover {
+            transform: rotateZ(270deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Rotate</div>
+    <div class="box2">Rotate</div>
+    <div class="box3">Rotate</div>
+</body>
+</html>

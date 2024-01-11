@@ -1,0 +1,72 @@
+<!--FLEXBOX CONTAINER -- JUSTIFY CONTENT
+    justify content  works when items are smaller and container is big
+    so justify will make the space between the items more content
+
+    here the items will start from 1 2 3 only it will just justify the space between the item 
+
+* Alignment: aligns flex items along the main axis
+* Flex-start: items align to the start of the flex container
+* Flex-end: items align to the end of the flex container
+* Centre: items are centered within the flex container
+* Space between/ Space around / Space evenly: distributes space between items evenly -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>JUSTIFY-CONTENT</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        .box {
+            height: 50px;
+            width: 50px;
+            border: 3px solid black;
+            margin:5px;
+        }
+        #heading {margin-left: 200px; color:maroon;}
+
+        #container {
+            background-color:honeydew;
+            height : 200px;
+            width: 600px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+
+            display:flex;
+            justify-content: space-evenly;
+            
+        }
+
+        #box1 { background-color:blue;}
+        #box2 { background-color:chartreuse}
+        #box3 { background-color:purple}
+        #box4 { background-color:crimson;}
+        #box5 { background-color:darkgreen;}
+        
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading">Flex Container</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box5" class="box">Item 5</div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

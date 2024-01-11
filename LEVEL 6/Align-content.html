@@ -1,0 +1,90 @@
+<!--ALIGN CONTENT
+It is utilized to adjust the spacing between flex lines within a flex container particularly when there is extra space along the cross axis
+Align content will decide the spacing between the items when there is more than one row
+In align-content you can use END(all items will comes in end)
+START(all items will go in top and start from the left)
+Basically align content means moving " ALL " the items anywhere in the container  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>ALIGN-CONTENT</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        .box {
+            height: 150px;
+            width: 150px;
+            border: 3px solid black;
+            margin:5px;
+        }
+        #heading {margin-left: 350px; color:maroon;}
+
+        #container {
+            background-color:antiquewhite;
+            height : 500px;
+            width: 900px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-content: center;
+
+            
+            
+        }
+
+        #box1 { background-color:blue;}
+        #box2 { background-color:chartreuse}
+        #box3 { background-color:purple}
+        #box4 { background-color:crimson;}
+        #box5 { background-color:darkgreen;}
+        #box6 { background-color:cornflowerblue;}
+        #box7 { background-color:darkslategray;}
+        #box8 { background-color:lightpink;}
+        #box9 { background-color:gold;}
+
+        
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading">ALIGN CONTENT</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box5" class="box">Item 5</div> 
+        <div id="box6" class="box">Item 6</div> 
+        <div id="box7" class="box">Item 7</div> 
+        <div id="box8" class="box">Item 8</div> 
+        <div id="box9" class="box">Item 9</div> 
+        
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+</body>
+</html>

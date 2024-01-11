@@ -1,0 +1,61 @@
+<!-- SKEW -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ROTATE</title>
+    <style>
+        .box1 {
+            height: 50px; width: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            background-color: chartreuse;
+            position: relative;
+            top: 50px;
+            left: 50px;
+
+            transition: all 2s ease-in-out 0s;
+        }
+        .box1:hover {
+            transform: skew(45deg);
+        }
+        .box2 {
+            height: 50px; width:50px;
+            background-color: darkorchid;
+            border: 2px solid black;
+            border-radius: 3px;
+            position:relative;
+            top: 80px;
+            left: 80px;
+
+            transition: all 2s ease-in-out 0s;
+        }
+
+        .box2:hover {
+            transform: skew(90deg);
+        }
+
+
+        .box3 {
+            height: 50px; width:50px;
+            background-color: red;
+            border: 2px solid black;
+            border-radius: 3px;
+            position:relative;
+            top: 100px;
+            left: 100px;
+
+            transition: all 2s ease-in-out 0s;
+        }
+
+        .box3:hover {
+            transform: skew(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">Skew</div>
+    <div class="box2">Skew</div>
+    <div class="box3">Skew</div>

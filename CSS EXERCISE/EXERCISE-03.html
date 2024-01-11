@@ -1,0 +1,48 @@
+<!--exercise 3
+01-create an heading at the centre and make capitalized
+02-use font family for the whole page to TimeNewRoman 
+03-Create one div inside another div..
+Set id and text outer to outer div
+Set id and text inner to inner div
+Set outer div text size to 25px..inner to 10px
+04-Use icons -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/7b7d9aa779.js" crossorigin="anonymous"></script>
+
+    <title>Exercise 3</title>
+    <style>
+        *{margin:0; padding:0; font-family: 'Times New Roman', Times, serif;}
+
+        #nav h1 {
+            background-color: pink;
+            text-align: center;
+            text-transform: capitalize;
+        }
+        #inner {font-size: 10px;}
+        #outer {font-size: 25px;}
+    </style>
+</head>
+<body>
+    <div id="nav">
+        <h1>navigation home</h1>
+    </div><br>
+
+    <div id="outer">OUTER
+        <div id="inner">INNER</div>
+    </div><br>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-apple"></i>
+    <i class="fa-solid fa-ghost"></i>
+    <i class="fa-solid fa-fish"></i>
+</body>
+</html>
+
+<!--to add the icon first 
+01- got to your free awesome website and log in
+02- copy the link in the bio of your profile in below the <head>
+03-search teh icon you want
+05- copy the syntax by a click and paste in body outside the div-->

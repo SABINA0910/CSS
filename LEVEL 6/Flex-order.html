@@ -1,0 +1,63 @@
+<!--FLEX ITEM - ORDER 
+The " order " property in CSS allows you to define the sequence in which flex items appear within the flex container, overriding their original order in the HTML. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>FLEX-ORDER</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            margin:5px;
+        }
+        #heading {margin-left: 200px; color:maroon;}
+
+        #container {
+            background-color:antiquewhite;
+            height : 250px;
+            width: 600px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+            
+            display: flex;
+
+            
+        }
+
+        #box1 { background-color:blue; order: 3;}
+        #box2 { background-color:chartreuse; order: 1;}
+        #box3 {background-color: cyan; order: 4;}    
+        #box4 { background-color:crimson; order: 2;}
+        #box5 { background-color:darkgreen; order: 3;}
+        
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading">FLEX ORDER</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box5" class="box">Item 5</div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

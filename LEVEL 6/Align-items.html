@@ -1,0 +1,79 @@
+<!--ALIGN ITEMS
+This property is used to align the flex containers items along the      cross-axis, which is perpendicular to the main axis
+align items is used for the spacing along the cross-axis
+if we use the align-item=  end then all the item will be in end
+if start then it will be in start of cross axis which is the between of the top
+
+* ALIGN ITEM STARTS FROM TOP TO BOTTOM OF CROSS-AXIS
+
+* MAINLY (START), (CENTRE), AND (END) IS USED MOST
+
+* IF WE WANT TO SET THE ITEMS ALONG THE MAIN AXIS THEN WE USE JUSTIFY CONTENT
+
+* IF WE WANT TO SET THE ITEMS ALONG THE CROSS AXIS THEN WE USE ALIGN ITEM
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>ALIGN-ITEMS</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            margin:5px;
+        }
+        #heading {margin-left: 350px; color:black;}
+
+        #container {
+            background-color:antiquewhite;
+            height : 700px;
+            width: 900px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+
+            display:flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: end;
+            
+        }
+
+        #box1 { background-color:blue;}
+        #box2 { background-color:chartreuse}
+        #box3 { background-color:purple}
+        #box4 { background-color:crimson;}
+        #box5 { background-color:darkgreen;}
+        
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading">ALIGN ITEMS</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box5" class="box">Item 5</div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

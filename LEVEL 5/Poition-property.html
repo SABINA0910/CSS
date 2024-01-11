@@ -1,0 +1,50 @@
+<!--POSITION PROPERTY
+there are four position property;
+
+1.= Static(default) : elements follow the normal document flow
+(top,right,bottom,left,z-index would not work)
+
+2. = Relative: elements position adjusted from its normal position
+
+3. = Absolute: positions element relative to the nearest positioned ancestor
+
+4. = Fixed: element positioned relative to the viewport, does not move on scroll-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Position Property</title>
+    <style>
+        *{margin: 0; padding: 0;}
+
+        .box{
+            width: 60px; height: 50px;
+            background-color: chartreuse;
+            margin: 5px;
+
+        }
+        #box1 {position: static;}
+        #box2 {position: relative; top: 5px; left: 50px;}
+        #box3 {position: fixed; left: 100px;}
+        #box4 {position: absolute; top: 5px; left:50px;}
+
+
+    </style>
+</head>
+<body>
+    
+    <div id="box1" class="box">Static</div>
+    <div id="box2" class="box">Relative</div>
+    <div id="box3" class="box">Fixed</div>
+    <div id="box4" class="box">Absolute</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+    <div class="box">Box</div>
+
+
+
+</body>
+</html>

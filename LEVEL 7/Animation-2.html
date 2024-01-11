@@ -1,0 +1,44 @@
+<!--ANIMATION-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ANIMATION</title>
+    <style>
+        .box {
+            height:100px; width: 100px;
+            color:darkred;
+            border: 2px solid whitesmoke;
+            background-color:yellow;
+            border-radius: 15px;
+            text-align: center;
+            position:relative;
+            top:10px;
+            left:10px;
+            animation-name: sliding;
+            animation-duration: 3s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 3s;
+
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            
+        /* animation: sliding 4s ease-in-out 0s 4 alternate; */
+        }
+
+        @keyframes sliding {
+            0% {left:10px; top: 0px;}
+            50% {left: 50px; top: 100px;}
+            100%{left:200px; top: 0px;}
+            
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="box">Animation</div>
+</body>
+</html>

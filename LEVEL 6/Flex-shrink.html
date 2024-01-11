@@ -1,0 +1,70 @@
+<!--FLEX-SHRINK
+The " FLEX-SHRINK " property in CSS determines how much a flex item will shrink relative to other items in the flex container if there is insufficient space
+Flex shrink will work when the width of the container is less 
+if we give flex-shrink : 0 then all item will shrink but the particular item where we give flex shrink 0 it will remain of its original full size-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>FLEX-SHRINK</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            margin:5px;
+        }
+        #heading {margin-left: 150px; color:maroon;}
+
+        #container {
+            background-color:antiquewhite;
+            height : 200px;
+            width: 450px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+            
+            display: flex;
+
+            
+        }
+
+        #box1 { background-color:blue;}
+        #box2 { background-color:chartreuse}
+        #box3 {
+            background-color: cyan;
+            flex-shrink: 4;
+        }
+        
+        #box4 { background-color:crimson;}
+        #box5 { background-color:darkgreen;}
+        
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading">FLEX SHRINK</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box5" class="box">Item 5</div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!--Z INDEX:
+determines the stacking order of elements along the z-axis
+only applies to elements with position set to relative , absolute ,fixed or sticky
+accepts integer values including negative numbers
+an element with a higher z index value appears above others-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Z index</title>
+    <style>
+        .container{position:relative;}
+
+        .box1, .box2 {
+
+            position: absolute;
+            border: 3px solid black;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .box1{
+            background-color: red;
+            left: 20px;
+            top: 60px;
+            z-index: 2;
+        }
+        .box2 {
+            background-color: aqua;
+            left: 60px;
+            top: 20px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">Z-index 2</div>
+        <div class="box2">Z-index 1</div>
+    </div>
+</body>
+</html>

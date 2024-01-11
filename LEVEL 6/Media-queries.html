@@ -1,0 +1,32 @@
+<!--MEDIA QUERIES
+* tailor styles for specific device characteristics'
+* use to create responsive wed designs 
+* apply style based on conditions like screen size
+* syntax: @media(condition) {CSS rules}
+* can combine 
+*min-width or max-width is used-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>MEDIA-QUERIES</title>
+    <style>
+        .box {
+            padding: 5px;
+            background-color: aqua;
+            height: 100px; width: 100px;
+
+        }
+        @media screen and (min-width: 250px) and (max-width:300px){
+            .box {background-color: darkorchid;
+            }
+            
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>

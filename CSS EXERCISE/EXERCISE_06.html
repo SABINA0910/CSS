@@ -1,0 +1,107 @@
+<!--EXERCISE 06
+* Create the same nav bar created in the last practice set but do the spacing using flex box
+* Use flexbox to centre an image inside a div
+* Create a div with three boxes where two boxes have fixed size but the third box grows and shrinks with container size
+* Create a div of 50px by 50px with color green. it should respond to the following conditions:
+..keep color green under 300px of view port size
+..change color to red from 300px to 400px
+..change color to blue after 400px-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>EXERCISE 06</title>
+    <style>
+        *{margin: 0; padding: 0;}
+
+        nav a {text-decoration: none;}
+        header {
+            background-color: aqua;
+        }
+        nav {
+            display:flex;
+            justify-content: space-around;
+            height: 30px; padding-top: 10px;
+        }
+        img {
+            height: 150px; 
+        }
+        #image_container {
+            border: 2px solid chartreuse;
+            height:200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            height: 75px; width: 75px;
+            border: 2px solid red;
+
+        }
+        #box_container {
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-around;
+            height: 80px;
+            width: 350px;
+            padding:3px;
+        }
+        #box2 {
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+        
+        #media_box{
+            height: 50px; width: 50px;
+            background-color: blue;
+            border:1px solid black;
+        }
+
+        @media screen and(min-width: 400px)  {
+            #media_box {
+                background-color: yellow;
+            }
+            
+        }
+
+        @media screen and(min-width: 300px) and (max-width: 400px) {
+            #media_box {
+                background-color: red;
+            }
+            
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">Contact</a>
+            <a href="#">Help</a>
+        </nav>
+    </header>
+    <main>
+        <div id="image_container">
+            <img src="green.jpg" alt="Switzerland">
+        </div><br>
+        <div id="box_container">
+            <div id="box1" class="box">Box1</div>
+            <div id="box2" class="box">Box2</div>
+            <div id="box3" class="box">Box3</div>
+        </div><br>
+
+        <div id="media_box">Media Box</div>
+
+
+
+
+    </main>
+</body>
+</html>

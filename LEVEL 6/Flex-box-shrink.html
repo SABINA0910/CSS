@@ -1,0 +1,64 @@
+<!--FLEX item does not go out of the container box
+when the container width is less the item box will automatically shrink and fit according to the container size though we give any width to the box item-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>FLEX-BOX-SHRINK</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 3px solid black;
+            margin:5px;
+        }
+        #heading {margin-left: 50px; color:maroon;}
+
+        #container {
+            background-color:antiquewhite;
+            height : 300px;
+            width: 250px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+
+            display:flex;
+            flex-direction: row;
+            
+        }
+
+        #box1 { background-color:blue;}
+        #box2 { background-color:chartreuse}
+        #box3 { background-color:purple}
+        #box4 { background-color:crimson;}
+        #box5 { background-color:darkgreen;}
+        
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading">Flex Container</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box5" class="box">Item 5</div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>

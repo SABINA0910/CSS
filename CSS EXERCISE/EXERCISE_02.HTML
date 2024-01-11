@@ -1,0 +1,48 @@
+<!--EXERCISE 2
+create a div with text and background color with opacity
+change the color of the main content = main means the whole main background color
+add background image
+use background shorthand property-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Exercise 2</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+        #bar{
+            background-color: aqua;
+            color:rgb(211, 21, 21, 0.5);
+        }
+        main{
+            background-color: greenyellow;
+            height: 500px;
+        }
+        #product {
+            height: 700px;
+            width:300px;
+
+            background-color: green;
+            background-image: url(red.png);
+            background-repeat: no-repeat;
+            background-position: center;
+
+            background: gold url(red.png) no-repeat none centre;
+
+        }
+    </style>
+
+
+</head>
+<body>
+    <header>
+    <div id="bar">THIS IS MY EXERCISE</div><br>
+    </header>
+    <main>
+        <div id="product">PRODUCT 1</div>
+    </main>
+
+</html>

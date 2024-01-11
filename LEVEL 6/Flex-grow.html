@@ -1,0 +1,76 @@
+<!--FLEX GROW
+The " flex-grow " property in CSS specifies how much a flex item will grow relative to other items in the flex container when additional space is available.
+
+* For shrink to work the width of the container must be less 
+but 
+* For flex-grow to work the container width must be large so that we can grow as much as we want the flex item
+
+*when you use flex grow in the all the box using .box class then all the item will grow equally
+
+* or we can use flex grow in all box and then define the flex grow to one item = 2 then all other item will be of same grow but the 2 one will double the grow .-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>FLEX-GROW</title>
+    <style>
+        *{margin: 0; padding:0;}
+
+        .box {
+            height: 75px;
+            width: 75px;
+            border: 3px solid black;
+            margin:5px;
+        }
+        #heading {margin-left: 250px; color:maroon;}
+
+        #container {
+            background-color:antiquewhite;
+            height : 150px;
+            width: 700px;
+            padding: 10px;
+            margin: 20px;
+            border: 3px solid black;
+            
+            display: flex;
+            justify-content: center;
+
+            
+        }
+
+        #box1 { background-color:blue;}
+        #box2 {
+            background-color: yellow;
+            flex-grow: 1;
+        } 
+        
+        #box3 {background-color:purple;}
+        #box4 { background-color:crimson;}
+        #box5 { background-color:darkgreen;}
+        
+
+
+    </style>
+
+</head>
+
+<body>
+    <h1 id="heading">FLEX GROW</h1>
+
+    <div id="container">
+        <div id="box1" class="box">Item 1</div>
+        <div id="box2" class="box">Item 2</div>
+        <div id="box3" class="box">Item 3</div>
+        <div id="box4" class="box">Item 4</div>
+        <div id="box5" class="box">Item 5</div>
+
+    </div>
+
+
+
+
+
+</body>
+</html>
